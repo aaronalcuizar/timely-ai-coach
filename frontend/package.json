@@ -1,0 +1,19 @@
+{
+    "name": "timely-frontend",
+    "version": "1.0.0",
+    "description": "Frontend for Timely AI Productivity Coach",
+    "scripts": {
+        "build-css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+        "dev": "concurrently \"npm run build-css\" \"live-server --port=3000\"",
+        "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+    },
+    "devDependencies": {
+        "tailwindcss": "^3.3.6",
+        "@tailwindcss/forms": "^0.5.7",
+        "concurrently": "^8.2.2",
+        "live-server": "^1.2.2"
+    },
+    "dependencies": {
+        "axios": "^1.6.2"
+    }
+}
